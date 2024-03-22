@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <a href=""></a>
+</head>
+<body>
+    <!-- edit -->
+    <div class="popup_edit">
+        <div class="edit">
+            <label for="field-name-edit"><strong>NAME</strong></label>
+            <input type="text" id="field-name-edit">
+            <label for="field-img-edit"><strong>IMAGE</strong></label>
+            <input type="text" id="field-img-edit">
+            <label for="field-about"><strong>ABOUT</strong></label>
+            <textarea name="" id="field-about-edit" cols="30" rows="10" maxlength="250"></textarea>
+            <label for="field-base-stats-edit"><strong>BASE-STATS</strong></label>
+            <div id="field-base-stats-edit">
+                <label for="field-HP-edit">HP</label>
+                <input type="text" id="field-HP-edit">
+                <label for="field-attack-edit">Attack</label>
+                <input type="text" id="field-attack-edit">
+                <label for="field-defense">Defense</label>
+                <input type="text" id="field-defense-edit">
+            </div>
+            <label for="field-evolution"><strong>EVOLUTION</strong></label>
+            <div id="field-evolution">
+                <label for="fresher-level-edit">Fresher Level</label>
+                <input type="text" id="fresher-level-edit">
+                <label for="junior-level-edit">Junior Level</label>
+                <input type="text" id="junior-level-edit">
+                <label for="senior-level-edit">Senior Level</label>
+                <input type="text" id="senior-level-edit">
+            </div>
+            <button class="savebtn">Save</button>
+        </div>
+    </div>
+    <!-- edit  -->
+    <!-- Create  -->
+    <div class="popup_create">
+        <div class="create">
+            <label for="field-name"><strong>NAME</strong></label>
+            <input type="text" id="field-name">
+            <label for="field-img"><strong>IMAGE</strong></label>
+            <input type="text" id="field-img">
+            <label for="field-about"><strong>ABOUT</strong></label>
+            <textarea name="" id="field-about" cols="30" rows="10" maxlength="250"></textarea>
+            <label for="field-base-stats"><strong>BASE-STATS</strong></label>
+            <div id="field-base-stats">
+                <label for="field-HP">HP</label>
+                <input type="text" id="field-HP">
+                <label for="field-attack">Attack</label>
+                <input type="text" id="field-attack">
+                <label for="field-defense">Defense</label>
+                <input type="text" id="field-defense">
+            </div>
+            <label for="field-evolution"><strong>EVOLUTION</strong></label>
+            <div id="field-evolution">
+                <label for="fresher-level">Fresher Level</label>
+                <input type="text" id="fresher-level">
+                <label for="junior-level">Junior Level</label>
+                <input type="text" id="junior-level">
+                <label for="senior-level">Senior Level</label>
+                <input type="text" id="senior-level">
+            </div>
+            <button class="submitbtn">Submit</button>
+        </div>
+    </div>
+    <!-- Create  -->
+    <!-- Header  -->
+    <div class="header">
+        <div class="light_style">
+            <img src="./image/icon/MaterialSymbolsDarkMode.svg" alt="">
+            <img src="./image/icon/MaterialSymbolsSunnyOutline.svg" alt="">
+        </div>
+        <div class="poke_logo">
+            <img src="./image/pokedex.2800773d.png" alt="">
+        </div>
+        <div class="git_logo">
+            <a href=""><img src="./image/icon/MdiGithub.svg" alt=""></a>
+        </div>
+    </div>
+    <!-- search  -->
+    <div class="search">
+        <div class="item region">
+            <h2>REGION</h2>
+            <select name="" id="">
+                <option value="1">Kanto</option>
+                <option value="2">Joho</option>
+                <option value="3">Hoenn</option>
+            </select>
+        </div>
+            <div class="item TYPE">
+            <h2>TYPE</h2>
+            <select name="" id="">
+                <option value="1">grass</option>
+                <option value="2">bug</option>
+                <option value="3">dark</option>
+            </select>
+        </div>
+        <div class="item SORT_BY">
+            <h2>SORT BY</h2>
+            <select name="" id="">
+                <option value="1">ID</option>
+                <option value="2">Name</option>
+            </select>
+        </div>
+        <div class="item SEARCH">
+            <h2>SEARCH</h2>
+            <input type="text" name="" id="">
+        </div>
+        <button class="createbtn"><strong>Create</strong></button>
+    </div>
+    <div class="cards-container">
+        
+    </div> 
+</body>
+<script src="./script.js"></script>
+</html>
