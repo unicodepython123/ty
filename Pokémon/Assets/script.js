@@ -178,6 +178,8 @@ function delete_poke (index) {
     // else {
     //     render()
     // }
+    localStorage.setItem('data', JSON.stringify(data_poke))
+    render()
     
 }
 let body = document.querySelector('body')
@@ -318,4 +320,4 @@ function save_poke (index) {
 }
 savebtn.addEventListener('click', save_poke)
 // lưu dữ liệu vào local
-localStorage.setItem('data', JSON.stringify(data_poke))
+
