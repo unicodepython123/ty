@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./responsive1.css">
+    <!-- <link rel="stylesheet" href="./responsive2.css"> -->
+    <link rel="stylesheet" href="./responsive3.css">
+    <link rel="stylesheet" href="./responsive4.css">
+</head>
+<body>
+    <div class="popup popup_edit_task active">
+        <div class="form form_edit_task">
+            <div class="form_text edit_form">Edit todo</div>
+            <input type="text" placeholder="Category Etc Marketing" class="kindofwork_edit_form">
+            <input type="text" placeholder="Title" class="tile_edit_form">
+            <textarea name="" id="" cols="30" rows="5" placeholder="Content" class="content_edit_form"></textarea>
+            <div class="radio_tasks">
+                <div>
+                    <input type="radio" name="abc" class="radio_input" id="to_do_radio" value="off">
+                    <label for="todo">To do</label>
+                </div>
+                <div>
+                    <input type="radio" name="abc" class="radio_input" id="doing_radio" value="off">
+                    <label for="doing">Doing</label>
+                </div>
+                <div>
+                    <input type="radio" name="abc" class="radio_input" id="completed_radio" value="off">
+                    <label for="completed">Completed</label>
+                </div>
+                <div>
+                    <input type="radio" name="abc" class="radio_input" id="blocked_radio" value="off">
+                    <label for="blocked">Blocked</label>
+                </div>    
+            </div>
+            <button class="submit_btn_edit_form">Submit</button>
+        </div>
+    </div>
+    <div class="popup popup_new_task active">
+        <div class="form form_new_task">
+            <div class="form_text new_form">Add new todo</div>
+            <input type="text" placeholder="Category Etc Marketing" class="kindofwork_new_form">
+            <input type="text" placeholder="Title" class="title_new_form">
+            <textarea name="" id="" cols="30" rows="5" placeholder="Content" class="content_new_form"></textarea>
+            <button class="submit_btn_new_form">Submit</button>
+        </div>
+    </div>
+    <div class="task_page">
+        <div class="for_center">
+            <div class="task_header_unit">
+                <div class="task_logo">
+                    <img class="task_logo_img" src="../image/task_logo.png" alt="">
+                    <div class="shit_done">
+                        <p>Let's get shit done</p>
+                        <img src="../image/icon/victory.png" alt="">
+                    </div>
+                </div>
+                <button class="new_task_btn">
+                    <img class="new_task_btn_img" src="../image/icon/add.png" alt="">
+                    <p>New task</p>
+                </button>
+            </div>
+            <div class="task_container">
+                <div class="tasks" >
+                    <div class="name task_todo">
+                        <div class="tagname task_todo_tagname">
+                            To do
+                            <div class="number_todo acitve_number">1</div>
+                        </div>
+                    </div>
+                    <div class="todo task_cards" id="todo">
+                        
+                    </div>
+                </div>
+                <div class="tasks">
+                    <div class="name task_doing">
+                        <div class="tagname task_doing_tagname">
+                            Doing
+                            <div class="number_doing acitve_number">1</div>
+                        </div>
+                    </div>
+                    <div class="doing task_cards" id="doing">
+                        
+                    </div>
+                </div>
+                <div class="tasks">
+                    <div class="name task_completed">
+                        <div class="tagname task_completed_tagname">
+                            Completed
+                            <div class="number_completed acitve_number">1</div>
+                        </div>
+                    </div>
+                    <div class="completed task_cards" id="completed">
+                        
+                    </div>
+                </div>
+                <div class="tasks">
+                    <div class="name task_blocked">
+                        <div class="tagname task_blocked_tagname">
+                            Blocked
+                            <div class="number_blocked">1</div>
+                        </div>
+                    </div>
+                    <div class="blocked task_cards" id="blocked">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./task.js"></script>
+</html>

@@ -1,0 +1,285 @@
+@media (max-width: 800px) {
+    * {
+        margin: 0;
+        font-family: Plus Jakarta Sans;
+    }
+    html, body {
+        height: 100%;
+    }
+    .task_page {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .for_center {
+        width: 500px;
+        height: 630px;
+    }
+    .shit_done {
+        display: flex;
+    }
+    .new_task_btn_img {
+        width: 12px;
+        height: 12px;
+    }
+    .new_task_btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        background-color: unset;
+        width: auto;
+        height: 40px;
+        border: solid 1px transparent;
+        transition-property: box-shadow;
+        transition-duration: 0.25s;
+        transition-timing-function: linear;
+    }
+    .new_task_btn:hover {
+        box-shadow: 0 5px 5px #a6a3a3;
+    }
+    .new_task_btn > p {
+        margin-left: 10px;
+    }
+    .task_header_unit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* --------------------- */
+    .task_container {
+        width: 100%;
+        display: flex; 
+        justify-content: space-around;
+        margin-top: 20px; 
+        flex-wrap: wrap;
+    }
+    .name {
+        width: 485px;
+        height: 50px;
+        border-bottom: solid 3px;
+    } 
+    
+    .number_todo {
+        width: 20px;
+        height: 20px;
+        background-color: #10b7ea;
+        margin-left: auto;
+        margin-right: 10px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .number_completed {
+        width: 20px;
+        height: 20px;
+        background-color: #59c770;
+        margin-left: auto;
+        margin-right: 10px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .number_doing {
+        width: 20px;
+        height: 20px;
+        background-color: rgba(188, 170, 80, 0.6);
+        margin-left: auto;
+        margin-right: 10px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .number_blocked {
+        width: 20px;
+        height: 20px;
+        background-color: #e46658;
+        margin-left: auto;
+        margin-right: 10px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tagname {
+        width: 100%;
+        height: 30px;
+        border: solid 1px transparent;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        box-sizing: border-box;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    .task_todo_tagname {
+        background-color: #00A6DA;
+    }
+    .task_doing_tagname {
+        background-color: rgba(204, 172, 3, 0.6);
+    }
+    .task_completed_tagname {
+        background-color: #3BC057;
+    }
+    .task_blocked_tagname {
+        background-color: #E74C3C;
+    }
+    .task_todo {
+        border-bottom-color: #00A6DA;
+    }
+    .task_doing {
+        border-bottom-color: rgba(204, 172, 3, 0.6);
+    }
+    .task_completed {
+        border-bottom-color: #3BC057;
+    }
+    .task_blocked {
+        border-bottom-color: #E74C3C;
+    }
+    /* --------------------- */
+    .task_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .kindofwork {
+        text-decoration: underline;
+        color: #4D8EFF;
+        font-weight: 800;
+        font-size: 12px;
+    }
+    .task_card {
+        width: 480px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        word-wrap: break-word;
+        border-radius: 7px;
+        margin-top: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        box-shadow: 0px 5px 5px #D2D2D2;
+        position: relative;
+        border: solid 1px #e3dddd;
+    }
+    .btn > button {
+        background-color: unset;
+        border: unset;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .btn button img {
+        width: 24x;
+        height: 24.3px;
+    }
+    .nameofwork {
+        width: 75%;
+        height: 50px;
+        border-bottom: solid 1px #DBDBDB;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .timecreate {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 20px;
+    }
+    .clock {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .time {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .text {
+        margin-bottom: 10px;
+        font-size: 10px;
+        font-weight: 300px;
+    }
+    .form {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 1px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        z-index: 9999999;
+    }
+    .form button {
+        width: 100%;
+        box-sizing: unset;
+        padding: 0;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .form input, textarea {
+        width: 100%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border: solid 1px;
+        padding: 0;
+    }
+    .form_text {
+        font-weight: 600;
+    }
+    .popup {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51,0.65);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 999999;
+    }
+    .active {
+        display: none;
+    }
+    .radio_tasks div input {
+        width: 12px;
+        margin-right: 5px;
+    }
+    .radio_tasks  > div {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+    }
+    .radio_tasks {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 10px;
+    }
+    .task_cards {
+        width: 485px;
+        height: fit-content;
+        max-height: 490px;
+        overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #bebdbd;
+        border-radius: 5px;
+    } 
+    .tasks {
+        margin-bottom: 20px;
+    }   
+}
